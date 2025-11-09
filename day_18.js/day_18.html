@@ -1,0 +1,88 @@
+<html>
+<body>
+    
+    <p id= "demo">xin chào</p>
+    <button  onclick="displayDate()">đổi lời chào </button>
+
+    <script>
+function displayDate() {             
+  document.getElementById("demo").innerHTML = "hello world";
+  document.getElementById("demo").style.color = "blue";
+}
+</script>
+    
+</body>
+</html>
+
+
+
+
+<h3>Danh sách nước uống:</h3>
+
+<ul id="drinkList">
+	<li>cafe</li>
+    <li>macha</li>
+</ul>
+
+<button id="addBtn">Thêm món</button>
+
+<script>
+const list = document.getElementById("drinkList");
+
+const addBtn = document.getElementById("addBtn");
+
+addBtn.addEventListener("click", () => {
+const newItem = document.createElement("li");
+
+newItem.textContent = "Món mới";
+
+list.appendChild(newItem);
+});
+ </script>
+
+
+
+<html>
+<body>
+<style>
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+
+.square1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.square2 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+</style>
+
+<div id="the_box">
+  <div class="square" id="square0"></div>
+  <div class="square1" id="square1"></div>
+  <div class="square2" id="square2"></div>
+</div>
+
+<button onclick="deleteLast()">delete last row</button>
+
+<script>
+function deleteLast() {
+  let container = document.getElementById("the_box");
+  let lastsquare = container.lastElementChild;
+  if (lastsquare) {
+    lastsquare.remove();
+  }
+}
+</script>
+
+</body>
+</html>
+
+
