@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Me Tube</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="image.png">
+
+<style>
+    body {
+        background: #0f0f0f;
+        padding: 40px;
+        font-family: Arial, sans-serif;
+    }
+
+    .yt-header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .yt-search-area {
+        display: flex;
+        align-items: center;
+        width: 600px;
+    }
+
+    .yt-input-box {
+        flex: 1;
+        height: 40px;
+        background: #121212;
+        border: 1px solid #303030;
+        border-right: none;
+        border-radius: 20px 0 0 20px;
+        padding: 0 14px;
+        display: flex;
+        align-items: center;
+    }
+
+    .yt-input-box input {
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .yt-input-box input::placeholder {
+        color: #888;
+    }
+
+    .yt-search-btn {
+        width: 64px;
+        height: 40px;
+        background: #222;
+        border: 1px solid #303030;
+        border-left: none;
+        border-radius: 0 20px 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .yt-search-btn:hover {
+        background: #333;
+    }
+
+    .yt-icon {
+        width: 22px;
+        height: 22px;
+        fill: #fff;
+        opacity: 0.9;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="yt-header">
+    <div class="yt-search-area">
+        <div class="yt-input-box">
+            <input type="text" placeholder="Tìm kiếm">
+        </div>
+
+        <div class="yt-search-btn">
+            <svg class="yt-icon" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27a6.471 6.471 0 0 0 
+                         1.48-5.34C15.29 5.01 12.28 2 8.64 2S2 
+                         5.01 2 8.39s3.01 6.39 6.64 6.39c1.61 
+                         0 3.09-.59 4.23-1.57l.27.28v.79l4.99 
+                         4.88L20.49 19l-4.99-5zM8.64 14c-3.12 
+                         0-5.64-2.44-5.64-5.61S5.52 2.78 8.64 
+                         2.78s5.64 2.44 5.64 5.61S11.76 14 8.64 14z"/>
+            </svg>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
